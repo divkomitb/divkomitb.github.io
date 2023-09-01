@@ -47,11 +47,15 @@ header h1 {
 }
 
 #homepage-kontak-text {
+  display: block;
   text-align: center;
   font-size: 1.2em;
 }
 
 #homepage-kontak-link {
+  display: block;
   text-align: center;
   font-size: 2.3em;
+  margin-bottom: 2em;
+  border: 2.5px solid orangered;
 }

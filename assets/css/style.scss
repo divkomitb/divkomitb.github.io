@@ -8,21 +8,33 @@
 }
 
 header h1 {
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
 }
 
 .img-regular {
-  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 2px 2px 3px #314;
 }
 
 ul li {
   list-style-type: none;
   font-size: 1.5em;
-  font-style: bold;
+  font-weight: bold;
+  padding: 0.2em;
+  color: orangered;
 }
 
 a {
-  font-style: bold;
+  font-weight: bold;
+}
+
+.caption {
+  font-size: 0.7em;
+  color: #bbb;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 1em;
 }

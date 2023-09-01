@@ -5,6 +5,12 @@ Divisi Komputer ...
 * memfasilitasi kebutuhan *website* dan *software* HME ITB, serta
 * menyediakan jasa pengerjaan proyek tidak hanya bagi internal himpunan tetapi juga masyarakat umum!
 
-<img src="/assets/website-hme-2023.png" width="50%" alt="Website HME ITB tahun 2023"/>
+<img src="/assets/website-hme-2023.png" width="50%" class="img-regular" alt="Website HME ITB tahun 2023"/>
+<span class="caption">Salah satu peran Divisi Komputer adalah mengelola situs web resmi HME ITB.</span> 
 
-<img src="/assets/divkom2013.jpg" width="40%" alt="Foto anggota Divisi Komputer 2013"/>
+<span id="homepage-kontak-text">Kontak Divisi Komputer via link berikut!</span>
+
+<a href="google.com" id="homepage-kontak-link">Kontak Divkom HME ITB</a>
+
+<img src="/assets/divkom2013.jpg" width="40%" class="img-regular" alt="Foto anggota Divisi Komputer 2013"/>
+<span class="caption">Anggota Divisi Komputer tahun 2023.</span>

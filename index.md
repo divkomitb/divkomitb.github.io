@@ -10,7 +10,7 @@ Divisi Komputer ...
 <br/>
 <span id="homepage-kontak-text">Kontak Divisi Komputer via link berikut!</span>
 <br/>
-<a href="google.com" id="homepage-kontak-link">Kontak Divkom HME ITB</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSd63Dx4A63TVR3B1BwiM_FLNsOgolmegjiTbBfexHPvmVoqnw/viewform?usp=sf_link" id="homepage-kontak-link">Kontak Divkom HME ITB</a>
 <br/>
 <img src="/assets/divkom2013.jpg" width="40%" class="img-regular" alt="Foto anggota Divisi Komputer 2013"/>
 <span class="caption">Anggota Divisi Komputer tahun 2023.</span>

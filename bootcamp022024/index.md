@@ -14,8 +14,6 @@ Dari tahun ke tahun, Bootcamp Divisi Komputer HME ITB dilaksanakan dengan mengik
 
 Oleh karena itu, semua materi diberikan secara asinkron via modul-modul teks yang dipublikasikan di website ini. Pengerjaan tugas, yang dinilai adalah bagian yang paling sulit, dapat dilakukan pada sesi offline opsional apabila ingin dibantu dan/atau sekadar ingin mengerjakan bareng teman. 
 
-Guidebook: [Gudebook Bootcamp Divisi Komputer Februari 2024](https://drive.google.com/file/d/11N_dFnL2RYl2NaTYZG54xOY5__9dX40t/view)
-
 # Materi 
 [Modul 1](https://divkomitb.github.io/bootcamp022024/modul_1)
 

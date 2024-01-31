@@ -1,3 +1,4 @@
+<div id="homepage">
 Didirikan pada tahun 1980an awal, Divisi Komputer adalah salah satu divisi di bawah [Himpunan Mahasiswa Elektroteknik ITB](https://hme.itb.ac.id/) yang bersifat otonom — seperti [Divisi Elektron](https://medium.com/@elektronhme) dan [Divisi Workshop](https://workshophme.com/).
 
 Divisi Komputer ...
@@ -14,3 +15,4 @@ Divisi Komputer ...
 <br/>
 <img src="/assets/divkom2013.jpg" width="40%" class="img-regular" alt="Foto anggota Divisi Komputer 2013"/>
 <span class="caption">Anggota Divisi Komputer tahun 2023.</span>
+</div>

@@ -19,7 +19,7 @@ header h1 {
   box-shadow: 2px 2px 3px #314;
 }
 
-#main_content ul li {
+#main_content ul .homepage li {
   list-style-type: none;
   font-size: 1.5em;
   font-weight: bold;
@@ -28,7 +28,7 @@ header h1 {
   text-align: center;
 }
 
-#main_content ul li .highlighted {
+#main_content ul .homepage li .highlighted {
   background-color: yellow;
   border: 4px solid yellow;
   border-radius: 4px;
@@ -39,7 +39,7 @@ header h1 {
   padding-bottom: 2em;
 }
 
-#main_content a {
+#main_content .homepage a {
   font-weight: bold;
 }
 

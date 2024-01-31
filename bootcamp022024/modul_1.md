@@ -1,7 +1,12 @@
 ---
-title: judul
+title: Modul 1 - HTML & GitHub
 ---
 
-# H1
-## H2
+# Pendahuluan
 hello world
+
+# Konsep Markup Language
+...
+
+# Mendefinisikan Struktur Dasar Webpage
+...

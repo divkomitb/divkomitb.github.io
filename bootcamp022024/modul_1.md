@@ -2,7 +2,7 @@
 title: Modul 1 - HTML & GitHub
 ---
 
-# Pendahuluan
+## Pendahuluan
 Langkah pertama dari melakukan *web development*, biasanya, adalah belajar HTML. Hypertext Markup Language (HTML) adalah fondasi dari tiap *webpage* sejak Tim Berners-Lee mengembangkan versi pertama web browser pada tahun 1990an. Pengertian konsep HTML tidak hanya digunakan oleh pengembang *front-end* website yang mengatur penampilan dan interaksi, tetapi juga developer *back-end* yang mesti memahami struktur dan aliran data suatu website.
 
 Pengetahuan dasar HTML tetap dapat berguna untuk mereka yang tidak berencana membuat website, contohnya untuk melakukan *troubleshooting* saat *browsing* sebagai user.
@@ -18,7 +18,7 @@ Modul 1-3 membahas fasa *rendering* yang dilakukan oleh browser. Modul 4 menyent
 
 Ini adalah peran HTML sebagai *markup language* - suatu bahasa yang digunakan untuk menjelaskan spesifikasi struktur, formatting, dan hubungan antarbagian suatu dokumen. Bandingkan dengan *programming language* yang menjelaskan urutan instruksi. 
 
-# Struktur dasar dokumen HTML
+## Struktur dasar dokumen HTML
 Berikut adalah dokuem "*Hello, world!*" versi HTML. Kode ini dapat dirender dengan melakukan *copy-paste* ke text editor, menyimpannya sebagai `.html`, lalu membukanya di browser (Menu > File > Open File ...).
 
 ```
@@ -42,7 +42,7 @@ Head adalah bagian dokumen yang berisi informasi yang perlu diketahui browser, t
 
 Body berisi konten website, seperti (dalam kasus ini), heading 1 "Hello, world!" dan sebuah paragraf.
 
-# Dasar-dasar HTML
+## Dasar-dasar HTML
 Sebuah website biasanya memiliki bagian header, navigasi, footer, dan konten utama. Tag HTML untuk tiap komponen tersebut adalah `header`, `nav`, `footer`, dan `main`.  Contoh dokumen HTML "Hello, world!" sebelumnya belum memiliki header, navigasi, ataupun footer, tetapi konten "Hello, world!"-nya itu sendiri dapat dianggap sebagai konten utama.
 
 ```
@@ -124,3 +124,16 @@ Untuk melakukan *prank* seperti mengubah indeks di Status Mahasiswa SIX menjadi 
 Hal lain yang (mungkin) lebih berguna daripada mengubah indeks menjadi SSS+ adalah mengakses versi "*full image*" dari postingan di Instagram, misalnya yang ada di @stei.itb. Tulisannya kecil-kecil jadi kurang terbaca, atau mungkin ada yang disuruh dosen untuk nge-share ke teman-teman seangkatannya dan tidak ingin membagikan gambar *pixelated* hasil nge-screenshot.
 
 Klik-kanan pada gambar, Inspect Element, cari `<img>` ... dan buka URL yang ada pada `src="..."`. 
+
+## GitHub
+Jika NIM kamu berawalan 132 atau 183, kamu kemungkinan besar akan segera bertemu GitHub di EL2208, atau kamu mungkin sudah melakukannya di DasPro.
+
+GitHub adalah website yang, singkatnya, digunakan untuk membagikan kode dan melakukan kolaborasi. GitHub berbeda dari Git, sebuah software *version control* yang digunakan untuk melacak perubahan pada dokumen sehingga kamu bisa dengan mudah "time traveling" ke versi kode sebelum-sebelumnya atau mencari tahu siapa yang menambahkan suatu *snippet* kode bermasalah yang menimbulkan *bug*. Namun, GitHub memang menggunakan prinsip-prinsip yang sama dengan Git (manajemen dan pelacakan perubahan kode, kolaborasi, dan lainnya).
+
+Salah satu hal yang penting untuk bootcamp ini adalah GitHub Pages - layanan yang diberikan oleh GitHub yang memperbolehkanmu untuk nge-hosting website buatanmu secara gratis.
+
+Setelah mendaftar dan membuat akun [di GitHub](https://github.com), buat repository bernama username.github.io (jika username kamu adalah divkomitb ... berarti nama repository adalah divkomitb.github.io). Ikuti instruksi no 1-6 [di tutorial ini](https://docs.github.com/en/pages/quickstart). Selanjutnya, jika kamu mengupload suatu dokumen HTML yang dinamakan `index.html`, dokumen tersebut bakal dapat dilihat di URL `username.github.io`.
+
+*Fun fact*: Kamu bisa dapat Canva Premium (dan masih banyak lagi) via [GitHub Student Developer Pack](https://education.github.com/pack) menggunakan e-mail ITB.
+
+

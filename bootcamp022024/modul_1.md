@@ -12,7 +12,9 @@ Saat kamu mengetik URL dan menekan *Enter*, browser akan menggunakan nama domain
 
 Modul 1-3 membahas fasa *rendering* yang dilakukan oleh browser. Modul 4 menyentuh sedikit tentang interaksi browser dan server. Keseluruhan proses kecuali bagian *rendering* oleh browser umumnya di bahas pada mata kuliah terkait Jaringan Komputer atau *Networking*.
 
-` server --> informasi website --> browser `
+```
+server --> informasi website --> browser
+```
 
 "Informasi website" yang diterima browser yang masuk ke cakupan Modul 1-3 adalah HTML, CSS, dan JavaScript. Singkatnya, HTML memberi tahu browser struktur website. Hal ini termasuk tetapi tidak terbatas pada judul website, elemen konten (teks, link, media) yang ada, dan pembagian subbagian (header, navigasi, footer).
 
@@ -136,4 +138,8 @@ Setelah mendaftar dan membuat akun [di GitHub](https://github.com), buat reposit
 
 *Fun fact*: Kamu bisa dapat Canva Premium (dan masih banyak lagi) via [GitHub Student Developer Pack](https://education.github.com/pack) menggunakan e-mail ITB.
 
+# Further reading
+Mozilla Developer Network memiliki [tutorial HTML dasar](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) dan [dokumentasi HTML](https://developer.mozilla.org/en-US/docs/Web/HTML).
+
+FreeCodeCamp memiliki [The Beginner's Guide to Git and GitHub](https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/).
 

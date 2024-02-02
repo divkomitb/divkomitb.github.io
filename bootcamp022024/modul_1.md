@@ -7,7 +7,7 @@ Langkah pertama dari melakukan *web development*, biasanya, adalah belajar HTML.
 
 Pengetahuan dasar HTML tetap dapat berguna untuk mereka yang tidak berencana membuat website, contohnya untuk melakukan *troubleshooting* saat *browsing* sebagai user.
 
-# Apa yang terjadi saat sebuah webpage dibuka?
+## Apa yang terjadi saat sebuah webpage dibuka?
 Saat kamu mengetik URL dan menekan *Enter*, browser akan menggunakan nama domain yang diberikan untuk mencari alamat IP yang terkait, membuat koneksi ke server yang adalah host dari website tersebut, lalu meminta informasi tentang website tersebut. Informasi ini digunakan untuk me-render website yang didapatkan user.
 
 Modul 1-3 membahas fasa *rendering* yang dilakukan oleh browser. Modul 4 menyentuh sedikit tentang interaksi browser dan server. Keseluruhan proses kecuali bagian *rendering* oleh browser umumnya di bahas pada mata kuliah terkait Jaringan Komputer atau *Networking*.

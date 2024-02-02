@@ -88,7 +88,7 @@ Tiap tag HTML juga dapat ditambahkan "id", contohnya
 
 sehingga `<a href="#hello-world">Lompat ke "Hello, world"</a>` akan menghasilkan link yang "melompat" ke elemen `h1` tersebut, seperti link yang ada pada bagian "Daftar Isi" atau "Table of Contents" di Wikipedia. Perhatikan bahwa ini berarti tiap `id` mesti unik - tidak boleh ada dua elemen HTML dengan atribut id yang sama.
 
-# Melihat dan berinteraksi dengan *source code* HTML dari browser
+## Melihat dan berinteraksi dengan *source code* HTML dari browser
 Untuk melihat *source code* HTML suatu website yang sedang dibuka di browser, klik kanan dan cari opsi "View Source" atau "View Source Code". Ini akan menunjukkan kode HTML website tersebut.
 
 Sebagai contoh, ini adalah *snippet* dari *source code* website SIX ITB.

@@ -138,7 +138,7 @@ Setelah mendaftar dan membuat akun [di GitHub](https://github.com), buat reposit
 
 *Fun fact*: Kamu bisa dapat Canva Premium (dan masih banyak lagi) via [GitHub Student Developer Pack](https://education.github.com/pack) menggunakan e-mail ITB.
 
-# Further reading
+## Further reading
 Mozilla Developer Network memiliki [tutorial HTML dasar](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) dan [dokumentasi HTML](https://developer.mozilla.org/en-US/docs/Web/HTML).
 
 FreeCodeCamp memiliki [The Beginner's Guide to Git and GitHub](https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/).

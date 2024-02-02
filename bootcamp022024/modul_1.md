@@ -8,7 +8,7 @@ Langkah pertama dari melakukan *web development*, biasanya, adalah belajar HTML.
 Pengetahuan dasar HTML tetap dapat berguna untuk mereka yang tidak berencana membuat website, contohnya untuk melakukan *troubleshooting* saat *browsing* sebagai user.
 
 ## Apa yang terjadi saat sebuah webpage dibuka?
-Saat kamu mengetik URL dan menekan *Enter*, browser akan menggunakan nama domain yang diberikan untuk mencari alamat IP yang terkait, membuat koneksi ke server yang adalah host dari website tersebut, lalu meminta informasi tentang website tersebut. Informasi ini digunakan untuk me-render website yang didapatkan user.
+Saat kamu mengetik URL dan menekan *Enter*, membuat koneksi ke server yang adalah host dari website tersebut, lalu meminta informasi tentang website tersebut. Informasi ini digunakan untuk me-render website yang didapatkan user.
 
 Modul 1-3 membahas fasa *rendering* yang dilakukan oleh browser. Modul 4 menyentuh sedikit tentang interaksi browser dan server. Keseluruhan proses kecuali bagian *rendering* oleh browser umumnya di bahas pada mata kuliah terkait Jaringan Komputer atau *Networking*.
 
@@ -43,6 +43,8 @@ Perhatikan bagaimana `<...>` mendeklarasikan permulaan dari suatu bagian (sepert
 Head adalah bagian dokumen yang berisi informasi yang perlu diketahui browser, tetapi tidak dirender (ditampikan sebagai konten website). Contoh elemen yang masuk ke dalam bagian head adalah `<title>`, yang memberi tahu browser judul website yang akan ditampilkan pada Tab browser.
 
 Body berisi konten website, seperti (dalam kasus ini), heading 1 "Hello, world!" dan sebuah paragraf.
+
+![Penampilan rendering Hello, world! di browser vs source code-nya.](https://github.com/divkomitb/divkomitb.github.io/blob/main/bootcamp022024/hello-html.png?raw=true)
 
 ## Dasar-dasar HTML
 Sebuah website biasanya memiliki bagian header, navigasi, footer, dan konten utama. Tag HTML untuk tiap komponen tersebut adalah `header`, `nav`, `footer`, dan `main`.  Contoh dokumen HTML "Hello, world!" sebelumnya belum memiliki header, navigasi, ataupun footer, tetapi konten "Hello, world!"-nya itu sendiri dapat dianggap sebagai konten utama.
@@ -135,8 +137,6 @@ GitHub adalah website yang, singkatnya, digunakan untuk membagikan kode dan mela
 Salah satu hal yang penting untuk bootcamp ini adalah GitHub Pages - layanan yang diberikan oleh GitHub yang memperbolehkanmu untuk nge-hosting website buatanmu secara gratis.
 
 Setelah mendaftar dan membuat akun [di GitHub](https://github.com), buat repository bernama username.github.io (jika username kamu adalah divkomitb ... berarti nama repository adalah divkomitb.github.io). Ikuti instruksi no 1-6 [di tutorial ini](https://docs.github.com/en/pages/quickstart). Selanjutnya, jika kamu mengupload suatu dokumen HTML yang dinamakan `index.html`, dokumen tersebut bakal dapat dilihat di URL `username.github.io`.
-
-*Fun fact*: Kamu bisa dapat Canva Premium (dan masih banyak lagi) via [GitHub Student Developer Pack](https://education.github.com/pack) menggunakan e-mail ITB.
 
 ## Further reading
 Mozilla Developer Network memiliki [tutorial HTML dasar](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) dan [dokumentasi HTML](https://developer.mozilla.org/en-US/docs/Web/HTML).

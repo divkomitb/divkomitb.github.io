@@ -30,7 +30,7 @@ server --> informasi website --> browser
 
 Ini adalah peran HTML sebagai *markup language* - suatu bahasa yang digunakan untuk menjelaskan spesifikasi struktur, formatting, dan hubungan antarbagian suatu dokumen. Bandingkan dengan *programming language* yang menjelaskan urutan instruksi. 
 
-> *To publish information for global distribution on the World Wide Web, you need a universally understood publishing language, a kind of mother tongue, which all computers on the Web can potentially understand. [...] The publishing language used by the Web is called HTML (HyperText Mark-up Language).* ([Dave Raggett](https://en.wikipedia.org/wiki/Dave_Raggett), salah satu pengembang HTML.)
+> *To publish information for global distribution on the World Wide Web, you need a universally understood publishing language, a kind of mother tongue, which all computers on the Web can potentially understand. [...] The publishing language used by the Web is called HTML (HyperText Mark-up Language).* -[Dave Raggett](https://en.wikipedia.org/wiki/Dave_Raggett)
 
 ## Struktur dasar dokumen HTML
 Berikut adalah dokumen "*Hello, world!*" versi HTML. Kode ini dapat di-render dengan melakukan *copy-paste* ke text editor, menyimpannya sebagai `.html`, lalu membukanya di browser (*Menu > File > Open File* ...).

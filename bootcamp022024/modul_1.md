@@ -3,6 +3,7 @@ title: Modul 1 - HTML & GitHub
 ---
 
 ## Daftar Isi
+
 * [Pendahuluan](#pendahuluan)
 * [Apa yang terjadi saat sebuah webpage dibuka?](#apa-yang-terjadi-saat-sebuah-webpage-dibuka)
 * [Struktur dasar dokumen HTML](#struktur-dasar-dokumen-html)
@@ -159,5 +160,5 @@ FreeCodeCamp memiliki [The Beginner's Guide to Git and GitHub](https://www.freec
 
 ["\<h1>-\<h6>: The HTML Section Heading elements"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) di Mozilla Developer Network menjelaskan `<h1>` hingga `<h6>`.
 
-## Changelog
+## *Changelog*
 05-02-2024: Menambahkan link ke post dan bagian *Further reading*, menambahkan gambar, perbaikan penulisan dan formatting minor

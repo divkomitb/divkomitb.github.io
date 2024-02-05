@@ -3,11 +3,10 @@ title: Bootcamp Divisi Komputer Februari 2024
 ---
 
 # Daftar Isi
-[Tentang Bootcamp Kali Ini](#tentang-bootcamp-kali-ini)
-
-[Materi](#materi)
-
-[Spesifikasi dan Submisi Tugas](#spesifikasi-dan-submisi-tugas)
+* [Tentang Bootcamp Kali Ini](#tentang-bootcamp-kali-ini)
+* [Materi](#materi)
+* [Spesifikasi dan Submisi Tugas](#spesifikasi-dan-submisi-tugas)
+* [Changelog Keseluruhan](#changelog-keseluruhan)
 
 # Tentang Bootcamp Kali Ini
 Dari tahun ke tahun, Bootcamp Divisi Komputer HME ITB dilaksanakan dengan mengikuti alur materi sinkron -> tugas -> materi sinkron -> tugas. Berdasarkan evaluasi, strategi ini masih belum optimal karena seringkali peserta merasa mengerti materi sinkron lalu ternyata tidak dapat mengerjakan tugasnya lalu *struggle* sendirian, seringkali jadwal peserta bentrok, banyak peserta yang lebih butuh bantuan saat pengerjaan tugas dibandingkan saat pemberian materi, dan lain sebagainya.
@@ -31,3 +30,8 @@ Tugas 2
 Tugas 3
 
 Tugas 4
+
+# Changelog Keseluruhan
+05-02-2024
+* Modul 1: Menambahkan link ke post dan bagian Further reading, menambahkan gambar, perbaikan penulisan dan formatting minor
+

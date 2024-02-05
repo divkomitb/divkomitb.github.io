@@ -136,6 +136,10 @@ server -> informasi website (kode HTML) ------> diterima browser ----> kode dire
 
 Sebagai dampaknya, kita dapat memodifikasi kode apa yang "dilihat" oleh browser (di-render) meski kode yang diterima browser tetap sama. Karena fitur ini didesain untuk digunakan oleh developer agar dapat bereksperimen langsung di browser, fitur ini di sebagian besar browser dikelompokkan ke *Developer Tools*. **Tool ini biasanya bernama Inspect Element**. Klik-kanan dan pilih "Inspect" atau pencet Ctrl+Shift+K dan pilih "Inspector". (Langkah dan istilah persisnya mungkin sedikit bervariasi dan tergantung versi dan jenis browser yang digunakan.)
 
+Ingat bagian "*... akan menghasilkan link yang 'melompat' ke elemen h1 tersebut ,seperti link yang ada pada bagian 'Daftar Isi' atau 'Table of Contents' di Wikipedia ...*" dari bagian "Dasar-dasar HTML"?
+
+![Melakukan Inspect Element terhadap Table of Contents di Wikipedia.](https://github.com/divkomitb/divkomitb.github.io/blob/main/assets/wikipedia-toc.png?raw=true)
+
 Untuk melakukan *prank* seperti mengubah indeks di Status Mahasiswa SIX menjadi SSS+, klik-kanan pada bagian indeks, cari kode HTML yang memberi tahu browser apa indeks kamu (`<td class="text-center">sebuah indeks</td>`) lalu klik-kanan > Edit HTML untuk mengubahnya menjadi `<td class="text-center">SSS+</td>`. Perhatikan bahwa yang terjadi adalah memodifikasi kode HTML yang dirender oleh browser. 
 
 Hal lain yang (mungkin) lebih berguna daripada mengubah indeks menjadi SSS+ adalah mengakses versi "*full image*" dari postingan di Instagram, misalnya yang ada di @stei.itb. Tulisannya kecil-kecil jadi kurang terbaca, atau mungkin ada yang disuruh dosen untuk nge-share ke teman-teman seangkatannya dan tidak ingin membagikan gambar *pixelated* hasil nge-screenshot? Metode ini dapat digunakan.

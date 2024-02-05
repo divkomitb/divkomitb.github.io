@@ -165,4 +165,10 @@ Untuk menulis CSS, terutama untuk *layouting*, penting untuk mempelajari prinsip
 Anatomi ini dapat dilihat pada Firefox menggunakan *Developer Tools* dengan kembali memanfaatkan *Inspect Element*.
 
 ## *Further reading*
+Penjelasan [warna apa saja yang diterima](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#color) CSS.
+
+Penjelasan [*CSS box model*](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) yang lebih mendalam.
+
+Dasar-dasar dari [*text styling*](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals).
+
 [Tulisan yang dipublikasikan W3C (World Wide Web Consortium) ini](https://www.w3.org/Style/CSS20/history.html) menjelaskan sejarah CSS secara sekilas.

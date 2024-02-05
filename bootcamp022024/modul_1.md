@@ -23,7 +23,7 @@ Ini adalah peran HTML sebagai *markup language* - suatu bahasa yang digunakan un
 ## Struktur dasar dokumen HTML
 Berikut adalah dokuem "*Hello, world!*" versi HTML. Kode ini dapat dirender dengan melakukan *copy-paste* ke text editor, menyimpannya sebagai `.html`, lalu membukanya di browser (Menu > File > Open File ...).
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -49,7 +49,7 @@ Body berisi konten website, seperti (dalam kasus ini), heading 1 "Hello, world!"
 ## Dasar-dasar HTML
 Sebuah website biasanya memiliki bagian header, navigasi, footer, dan konten utama. Tag HTML untuk tiap komponen tersebut adalah `header`, `nav`, `footer`, dan `main`.  Contoh dokumen HTML "Hello, world!" sebelumnya belum memiliki header, navigasi, ataupun footer, tetapi konten "Hello, world!"-nya itu sendiri dapat dianggap sebagai konten utama.
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>

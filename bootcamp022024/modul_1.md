@@ -3,14 +3,14 @@ title: Modul 1 - HTML & GitHub
 ---
 
 ## Pendahuluan
-Langkah pertama dari melakukan *web development*, biasanya, adalah belajar HTML. Hypertext Markup Language (HTML) adalah fondasi dari tiap *webpage* sejak Tim Berners-Lee mengembangkan versi pertama web browser pada tahun 1990an. Pengertian konsep HTML tidak hanya digunakan oleh pengembang *front-end* website yang mengatur penampilan dan interaksi, tetapi juga developer *back-end* yang mesti memahami struktur dan aliran data suatu website.
+Langkah pertama dari melakukan *web development*, biasanya, adalah belajar HTML. Hypertext Markup Language (HTML) adalah fondasi dari tiap *webpage* [sejak Tim Berners-Lee mengembangkan versi pertama web browser pada tahun 1990an](https://www.w3.org/People/Raggett/book4/ch02.html). Pengertian konsep HTML tidak hanya digunakan oleh pengembang *front-end* website yang mengatur penampilan dan interaksi, tetapi juga developer *back-end* yang mesti memahami struktur dan aliran data suatu website.
 
 Pengetahuan dasar HTML tetap dapat berguna untuk mereka yang tidak berencana membuat website, contohnya untuk melakukan *troubleshooting* saat *browsing* sebagai user.
 
 ## Apa yang terjadi saat sebuah webpage dibuka?
-Saat kamu mengetik URL dan menekan *Enter*, browser membuat koneksi ke server yang adalah host dari website tersebut, lalu meminta informasi tentang website tersebut. Informasi ini digunakan untuk me-render website yang didapatkan user.
+Saat kamu mengetik URL dan menekan *Enter*, browser membuat koneksi ke server yang adalah *host* (penyedia) dari website tersebut, lalu meminta informasi tentang website tersebut. Informasi ini digunakan untuk melakukan *rendering* website yang didapatkan user.
 
-Modul 1-3 membahas fasa *rendering* yang dilakukan oleh browser. Modul 4 menyentuh sedikit tentang interaksi browser dan server. Keseluruhan proses kecuali bagian *rendering* oleh browser umumnya di bahas pada mata kuliah terkait Jaringan Komputer atau *Networking*.
+Modul 1-3 membahas tahap *rendering* yang dilakukan oleh browser. Modul 4 menyentuh sedikit tentang interaksi browser dan server. Keseluruhan proses kecuali bagian *rendering* oleh browser umumnya di bahas pada mata kuliah terkait Jaringan Komputer atau *Networking* (e.g. EL4120).
 
 ```
 server --> informasi website --> browser
@@ -20,8 +20,10 @@ server --> informasi website --> browser
 
 Ini adalah peran HTML sebagai *markup language* - suatu bahasa yang digunakan untuk menjelaskan spesifikasi struktur, formatting, dan hubungan antarbagian suatu dokumen. Bandingkan dengan *programming language* yang menjelaskan urutan instruksi. 
 
+> *To publish information for global distribution on the World Wide Web, you need a universally understood publishing language, a kind of mother tongue, which all computers on the Web can potentially understand. [...] The publishing language used by the Web is called HTML (HyperText Mark-up Language).* ([Dave Raggett](https://en.wikipedia.org/wiki/Dave_Raggett), salah satu pengembang HTML.)
+
 ## Struktur dasar dokumen HTML
-Berikut adalah dokuem "*Hello, world!*" versi HTML. Kode ini dapat dirender dengan melakukan *copy-paste* ke text editor, menyimpannya sebagai `.html`, lalu membukanya di browser (Menu > File > Open File ...).
+Berikut adalah dokumen "*Hello, world!*" versi HTML. Kode ini dapat di-render dengan melakukan *copy-paste* ke text editor, menyimpannya sebagai `.html`, lalu membukanya di browser (*Menu > File > Open File* ...).
 
 ```html
 <!DOCTYPE html>
@@ -36,13 +38,13 @@ Berikut adalah dokuem "*Hello, world!*" versi HTML. Kode ini dapat dirender deng
 </html>
 ```
 
-Perhatikan bagaimana `<...>` mendeklarasikan permulaan dari suatu bagian (seperti `h1` untuk heading 1 atau `em` untuk teks yang italics) dan `</...>` menutupnya. Kode `<...>` dan `</...>` disebut tag atau tag HTML. Lebih spesifiknya lagi, `<...>` adalah opening tag dan `</...>` sebuah closing tag.
+**Perhatikan bagaimana `<...>` mendeklarasikan permulaan dari suatu bagian (seperti `h1` untuk heading 1 atau `em` untuk teks yang italics) dan `</...>` menutupnya**. Kode `<...>` dan `</...>` disebut tag atau tag HTML. Lebih spesifiknya lagi, `<...>` adalah *opening tag* dan `</...>` sebuah *closing tag*.
 
-`<!DOCTYPE html>` memberi tahu browser bahwa dokumen yang sedang dibuka browser adalah dokumen HTML, agar dirender dengan benar. Ini lalu dilanjutkan dengan `<html>` yang kemudian terbagi menjadi dua bagian, head dan body. 
+`<!DOCTYPE html>` memberi tahu browser bahwa dokumen yang sedang dibuka browser adalah dokumen HTML, agar di-render dengan benar. Ini lalu dilanjutkan dengan `<html>` yang kemudian dibagi menjadi dua bagian, `head` dan `body`. 
 
-Head adalah bagian dokumen yang berisi informasi yang perlu diketahui browser, tetapi tidak dirender (ditampikan sebagai konten website). Contoh elemen yang masuk ke dalam bagian head adalah `<title>`, yang memberi tahu browser judul website yang akan ditampilkan pada Tab browser.
+`head` adalah bagian dokumen yang berisi informasi yang perlu diketahui browser, tetapi tidak di-render (ditampikan sebagai konten website). Contoh elemen yang masuk ke dalam bagian `head` adalah `<title>`, yang memberi tahu browser judul website yang akan ditampilkan pada Tab browser. 
 
-Body berisi konten website, seperti (dalam kasus ini), heading 1 "Hello, world!" dan sebuah paragraf.
+`body` berisi konten website, seperti (dalam kasus ini), heading 1 "*Hello, world!*" dan sebuah paragraf.
 
 ![Penampilan rendering Hello, world! di browser vs source code-nya.](https://github.com/divkomitb/divkomitb.github.io/blob/main/bootcamp022024/hello-html.png?raw=true)
 
@@ -68,7 +70,7 @@ Apa perubahan yang terjadi saat website ini di-render?
 
 Secara langsung, untuk dokumen ini, tidak ada. `<main>` memberitahu browser di mana konten utama berada, tetapi respons browser untuk dokumen HTML ini tetap bakal sama dengan jika ia tidak diberitahu. 
 
-Efek-efek kode seperti `<nav>` dan `<footer>` paling terlihat saat digunakan untuk membuat website yang lebih kompleks. Dengan memberi tahu informasi yang lebih lengkap tentang struktur dan aliran website, kode seperti ini memastikan search engines seperti Google menampilkan *snippet* website yang benar, membantu website beradaptasi pada ukuran layar yang berbeda (desktop vs mobile vs tablet), dan membuat kode lebih *readable*. 
+Efek-efek kode seperti `<nav>` dan `<footer>` paling terlihat saat digunakan untuk membuat website yang lebih kompleks. Dengan memberi tahu informasi yang lebih lengkap tentang struktur dan aliran website, kode seperti ini memastikan *search engines* seperti Google menampilkan *snippet* website yang benar, membantu website beradaptasi pada ukuran layar yang berbeda (desktop vs mobile vs tablet), dan membuat kode lebih *readable*. 
 
 Sebuah eksperimen yang dapat dilakukan adalah mencoba browsing tanpa menggunakan *cursor* - hanya bergantung pada tombol-tombol tab, space, enter, dan lainnya di keyboard. Beberapa website mudah dinavigasi dengan cara ini karena tombol Tab akan memindahkan "fokus" mengikuti aliran yang logis, tetapi beberapa website lain mungkin akan menghasilkan perilaku yang aneh dan agak *annoying*. Jika *source code* tipe website pertama dan website kedua dibandingkan, kemungkinan besar tipe website pertama menggunakan tag HTML seperti `<nav>`.
 
@@ -91,11 +93,11 @@ Tiap tag HTML juga dapat ditambahkan "id", contohnya
 sehingga `<a href="#hello-world">Lompat ke "Hello, world"</a>` akan menghasilkan link yang "melompat" ke elemen `h1` tersebut, seperti link yang ada pada bagian "Daftar Isi" atau "Table of Contents" di Wikipedia. Perhatikan bahwa ini berarti tiap `id` mesti unik - tidak boleh ada dua elemen HTML dengan atribut id yang sama.
 
 ## Melihat dan berinteraksi dengan *source code* HTML dari browser
-Untuk melihat *source code* HTML suatu website yang sedang dibuka di browser, klik kanan dan cari opsi "View Source" atau "View Source Code". Ini akan menunjukkan kode HTML website tersebut.
+Untuk melihat *source code* HTML suatu website yang sedang dibuka di browser, klik kanan dan cari opsi "*View Source*" atau "*View Source Code*". Ini akan menunjukkan kode HTML website tersebut.
 
 Sebagai contoh, ini adalah *snippet* dari *source code* website SIX ITB.
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -107,7 +109,7 @@ Sebagai contoh, ini adalah *snippet* dari *source code* website SIX ITB.
 ...
 ```
 
-Saat kita menggunakan fitur "View Source", yang kita lihat adalah kode HTML yang diterima browser dari server. 
+Saat kita menggunakan fitur "*View Source*", yang kita lihat adalah kode HTML yang diterima browser dari server. 
 
 ```
 server -> informasi website (kode HTML) ------> diterima browser ----> kode dirender browser
@@ -121,25 +123,28 @@ server -> informasi website (kode HTML) ------> diterima browser ----> kode dire
                                                                  ^^^ kita mengintip dan memodifikasi kode di sini
 ```
 
-Sebagai dampaknya, kita dapat memodifikasi kode apa yang "dilihat" oleh browser (dirender) meski kode yang diterima browser tetap sama. Karena fitur ini didesain untuk digunakan oleh developer agar dapat bereksperimen langsung di browser, fitur ini di sebagian besar browser dikelompokkan ke *Developer Tools*. Tool ini biasanya bernama Inspect Element. Klik-kanan dan pilih "Inspect" atau pencet Ctrl+Shift+K dan pilih "Inspector". (Langkah dan istilah persisnya mungkin sedikit bervariasi dan tergantung versi dan jenis browser yang digunakan.)
+Sebagai dampaknya, kita dapat memodifikasi kode apa yang "dilihat" oleh browser (di-render) meski kode yang diterima browser tetap sama. Karena fitur ini didesain untuk digunakan oleh developer agar dapat bereksperimen langsung di browser, fitur ini di sebagian besar browser dikelompokkan ke *Developer Tools*. **Tool ini biasanya bernama Inspect Element**. Klik-kanan dan pilih "Inspect" atau pencet Ctrl+Shift+K dan pilih "Inspector". (Langkah dan istilah persisnya mungkin sedikit bervariasi dan tergantung versi dan jenis browser yang digunakan.)
 
 Untuk melakukan *prank* seperti mengubah indeks di Status Mahasiswa SIX menjadi SSS+, klik-kanan pada bagian indeks, cari kode HTML yang memberi tahu browser apa indeks kamu (`<td class="text-center">sebuah indeks</td>`) lalu klik-kanan > Edit HTML untuk mengubahnya menjadi `<td class="text-center">SSS+</td>`. Perhatikan bahwa yang terjadi adalah memodifikasi kode HTML yang dirender oleh browser. 
 
-Hal lain yang (mungkin) lebih berguna daripada mengubah indeks menjadi SSS+ adalah mengakses versi "*full image*" dari postingan di Instagram, misalnya yang ada di @stei.itb. Tulisannya kecil-kecil jadi kurang terbaca, atau mungkin ada yang disuruh dosen untuk nge-share ke teman-teman seangkatannya dan tidak ingin membagikan gambar *pixelated* hasil nge-screenshot.
+Hal lain yang (mungkin) lebih berguna daripada mengubah indeks menjadi SSS+ adalah mengakses versi "*full image*" dari postingan di Instagram, misalnya yang ada di @stei.itb. Tulisannya kecil-kecil jadi kurang terbaca, atau mungkin ada yang disuruh dosen untuk nge-share ke teman-teman seangkatannya dan tidak ingin membagikan gambar *pixelated* hasil nge-screenshot? Metode ini dapat digunakan.
 
 Klik-kanan pada gambar, Inspect Element, cari `<img>` ... dan buka URL yang ada pada `src="..."`. 
 
 ## GitHub
-Jika NIM kamu berawalan 132 atau 183, kamu kemungkinan besar akan segera bertemu GitHub di EL2208, atau kamu mungkin sudah melakukannya di DasPro.
+Jika NIM kamu berawalan 132 atau 183, kamu kemungkinan besar akan segera atau sudah pernah bertemu GitHub di EL2208. Atau, kamu mungkin sudah melakukannya di IF1210.
 
-GitHub adalah website yang, singkatnya, digunakan untuk membagikan kode dan melakukan kolaborasi. GitHub berbeda dari Git, sebuah software *version control* yang digunakan untuk melacak perubahan pada dokumen sehingga kamu bisa dengan mudah "time traveling" ke versi kode sebelum-sebelumnya atau mencari tahu siapa yang menambahkan suatu *snippet* kode bermasalah yang menimbulkan *bug*. Namun, GitHub memang menggunakan prinsip-prinsip yang sama dengan Git (manajemen dan pelacakan perubahan kode, kolaborasi, dan lainnya).
+GitHub adalah website yang, singkatnya, digunakan untuk membagikan kode dan melakukan kolaborasi. GitHub berbeda dari Git, sebuah software *version control* yang digunakan untuk melacak perubahan pada dokumen sehingga kamu bisa dengan mudah "*time traveling*" ke versi kode sebelum-sebelumnya atau mencari tahu siapa yang menambahkan suatu *snippet* kode bermasalah yang menimbulkan *bug*. Namun, GitHub memang menggunakan prinsip-prinsip yang sama dengan Git (manajemen dan pelacakan perubahan kode, kolaborasi, dan lainnya).
 
-Salah satu hal yang penting untuk bootcamp ini adalah GitHub Pages - layanan yang diberikan oleh GitHub yang memperbolehkanmu untuk nge-hosting website buatanmu secara gratis.
+Salah satu hal yang penting untuk bootcamp ini adalah GitHub Pages - layanan yang diberikan oleh GitHub yang memperbolehkanmu untuk nge-*hosting* website buatanmu secara gratis.
 
-Setelah mendaftar dan membuat akun [di GitHub](https://github.com), buat repository bernama username.github.io (jika username kamu adalah divkomitb ... berarti nama repository adalah divkomitb.github.io). Ikuti instruksi no 1-6 [di tutorial ini](https://docs.github.com/en/pages/quickstart). Selanjutnya, jika kamu mengupload suatu dokumen HTML yang dinamakan `index.html`, dokumen tersebut bakal dapat dilihat di URL `username.github.io`.
+Setelah mendaftar dan membuat akun [di GitHub](https://github.com), buat repository bernama username.github.io dengan semua huruf kecil (jika username kamu adalah DivKomITB ... berarti nama repository adalah divkomitb.github.io). Ikuti instruksi no 1-6 [di tutorial ini](https://docs.github.com/en/pages/quickstart). Selanjutnya, jika kamu mengupload suatu dokumen HTML yang dinamakan `index.html`, dokumen tersebut bakal dapat dilihat di URL `username.github.io`. 
 
-## Further reading
+## *Further reading*
 Mozilla Developer Network memiliki [tutorial HTML dasar](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) dan [dokumentasi HTML](https://developer.mozilla.org/en-US/docs/Web/HTML).
 
 FreeCodeCamp memiliki [The Beginner's Guide to Git and GitHub](https://www.freecodecamp.org/news/the-beginners-guide-to-git-github/).
 
+[Bab "*Introduction to the World Wide Web*"](https://www.w3.org/People/Raggett/book4/ch01.html) dari buku *Raggett on HTML4* yang menjelaskan cara kerja World Wide Web.
+
+["\<h1>-\<h6>: The HTML Section Heading elements"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) di Mozilla Developer Network menjelaskan `<h1>` hingga `<h6>`.

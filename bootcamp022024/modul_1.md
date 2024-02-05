@@ -2,6 +2,16 @@
 title: Modul 1 - HTML & GitHub
 ---
 
+## Daftar Isi
+* [Pendahuluan](#pendahuluan)
+* [Apa yang terjadi saat sebuah webpage dibuka?](#apa-yang-terjadi-saat-sebuah-webpage-dibuka)
+* [Struktur dasar dokumen HTML](#struktur-dasar-dokumen-html)
+* [Dasar-dasar HTML](#dasar-dasar-html)
+* [Melihat dan berinteraksi dengan source code HTML dari browser](#melihat-dan-berinteraksi-dengan-source-code-html-dari-browser)
+* [GitHub](#melihat-dan-berinteraksi-dengan-source-code-html-dari-browser)
+* [Further reading](#further-reading)
+* [Changelog](#changelog)
+
 ## Pendahuluan
 Langkah pertama dari melakukan *web development*, biasanya, adalah belajar HTML. Hypertext Markup Language (HTML) adalah fondasi dari tiap *webpage* [sejak Tim Berners-Lee mengembangkan versi pertama web browser pada tahun 1990an](https://www.w3.org/People/Raggett/book4/ch02.html). Pengertian konsep HTML tidak hanya digunakan oleh pengembang *front-end* website yang mengatur penampilan dan interaksi, tetapi juga developer *back-end* yang mesti memahami struktur dan aliran data suatu website.
 
@@ -148,3 +158,6 @@ FreeCodeCamp memiliki [The Beginner's Guide to Git and GitHub](https://www.freec
 [Bab "*Introduction to the World Wide Web*"](https://www.w3.org/People/Raggett/book4/ch01.html) dari buku *Raggett on HTML4* yang menjelaskan cara kerja World Wide Web.
 
 ["\<h1>-\<h6>: The HTML Section Heading elements"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) di Mozilla Developer Network menjelaskan `<h1>` hingga `<h6>`.
+
+## Changelog
+05-02-2024: Menambahkan link ke post dan bagian *Further reading*, menambahkan gambar, perbaikan penulisan dan formatting minor

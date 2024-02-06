@@ -16,7 +16,7 @@ Oleh karena itu, semua materi diberikan secara asinkron via modul-modul teks yan
 ## Materi 
 [Modul 1](https://divkomitb.github.io/bootcamp022024/modul_1)
 
-Modul 2
+[Modul 2](https://divkomitb.github.io/bootcamp022024/modul_2)
 
 Modul 3
 
@@ -25,7 +25,7 @@ Modul 4
 ## Spesifikasi dan Submisi Tugas
 [Tugas 1](https://divkomitb.github.io/bootcamp022024/tugas_1)
 
-Tugas 2
+[Tugas 2](https://divkomitb.github.io/bootcamp022024/tugas_2)
 
 Tugas 3
 

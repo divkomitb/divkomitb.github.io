@@ -18,13 +18,13 @@ Cari tahu tentang `<div>` dan apa perbedaannya terhadap `<section>`. Beberapa op
 * [\<section>: The Generic Section element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)
 * [Content categories - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories)
 * [HTML Living Standard - Grouping Content](https://html.spec.whatwg.org/multipage/sections.html)
-* [Marie Chatfield Rivas | Don't Just Put a \<div> on It - Use the Power of the Browser!](https://mariechatfield.com/blog/semantic-html)
+* [Marie Chatfield Rivas | Don't Just Put a div on It - Use the Power of the Browser!](https://mariechatfield.com/blog/semantic-html)
 
 Cari tahu tentang *property* CSS `display`.
 * [The CSS Display Property](https://www.freecodecamp.org/news/the-css-display-property-display-none-display-table-inline-block-and-more/)
 * [display - CSS: Cascading Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 * [Introduction to CSS layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction)
-* [Normal Flow | MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)
+* [Normal Flow - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)
 
 ## Spesifikasi
 Buat sebuah *webpage* yang memperkenalkan dirimu. Format/isi dibebaskan selama mengikuti topik "perkenalan diri" tersebut.

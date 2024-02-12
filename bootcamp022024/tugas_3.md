@@ -14,7 +14,7 @@ Jika dikombinasikan dengan tombol "Submit"?
 ## Spesifikasi
 Buat sebuah *webpage* yang berisi setidaknya satu `form` dan satu `button`. Saat salah satu `button` diklik, webpage nge-*generate* konten berdasarkan (setidaknya) apa yang disubmit di form (boleh lebih dari satu), beserta suatu nilai random ([hint](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)).
 
-Contoh: 1 form berjudul "Nama" dan 1 tombol "Cek Nilai" yang akan menghasilkan kalimat "(Nama) mendapatkan nilai X :O" di mana X adalah nilai *random* jika tombol diklik. Di-*generate* kalimat baru tiap kali tombol tersebut diklik.
+Contoh: 1 form berjudul "`Nama`" dan 1 tombol "`Cek Nilai`" yang akan menghasilkan kalimat "`(Nama) mendapatkan nilai X :O`" di mana X adalah nilai *random* jika tombol diklik. Di-*generate* kalimat baru tiap kali tombol tersebut diklik.
 
 Aplikasikan *styling* CSS sesuai selera.
 

@@ -9,7 +9,7 @@ Ada dua elemen HTML yang umum digunakan untuk konteks ini: [button](https://deve
 
 Jika dikombinasikan dengan tombol "Submit"?
 * [Contoh 1](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event).
-* [Contoh 2](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event).
+* [Contoh 2](https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onsubmit).
 
 ## Spesifikasi
 Buat sebuah *webpage* yang berisi setidaknya satu `form` dan satu `button`. Saat salah satu `button` diklik, webpage nge-*generate* konten berdasarkan (setidaknya) apa yang disubmit di form (boleh lebih dari satu), beserta suatu nilai random ([hint](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)).

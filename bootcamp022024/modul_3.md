@@ -173,6 +173,6 @@ function myFunction(a, b) {
 ```
 
 ## *Further reading*
-[Tutorial JavaScript sebagai bahasa pemrograman] yang lebih general di Mozilla Developer Network. Lebih ke menjelaskan *pure JavaScript* daripada menjelaskan JavaScript sebagai alat untuk memanipulasi elemen HTML.
+[Tutorial JavaScript sebagai bahasa pemrograman](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) yang lebih general di Mozilla Developer Network. Lebih ke menjelaskan *pure JavaScript* daripada menjelaskan JavaScript sebagai alat untuk memanipulasi elemen HTML.
 
 [Dokumentasi JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) di Mozilla Developer Network.

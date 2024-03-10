@@ -38,7 +38,9 @@ Perhatikan bahwa *Network Monitor* dari Firefox ini melabeli *method* dari *requ
 ![alt](https://github.com/divkomitb/divkomitb.github.io/blob/main/assets/createtweet.png?raw=true)
 
 ## Menggunakan dan menampilkan informasi *Public APIs*
-API yang digunakan pada suatu website dapat dipelajari dengan, antara lain, berinteraksi dengan website sambil memantau *Network Monitor*. Namun, kecuali memang ada intensi untuk melakukan *reverse engineering*, ini bukan metode yang paling efektif. Seringkali sudah ada dokumentasi publik tentang API yang boleh digunakan yang dapat dibaca-baca. API seperti ini disebut sebagai *Public APIs* atau *Open APIs*. API jenis ini berkebalikan dengan API yang hanya untuk digunakan oleh *developer* internal organisasi.
+API yang digunakan pada suatu website dapat dipelajari dengan, antara lain, berinteraksi dengan website sambil memantau *Network Monitor*. Namun, kecuali memang ada intensi untuk melakukan *reverse engineering*, ini bukan metode yang paling efektif. 
+
+Seringkali, sudah ada dokumentasi publik tentang API yang boleh digunakan yang dapat dibaca-baca. API seperti ini disebut sebagai *Public APIs* atau *Open APIs*. API jenis ini berkebalikan dengan API yang hanya untuk digunakan oleh *developer* internal organisasi.
 
 Dokumentasi API publik ini umumnya menjelaskan:
 * API apa saja yang tersedia/diperbolehkan
@@ -51,11 +53,15 @@ Beberapa contoh dokumentasi API publik:
 * [milik Twitter](https://developer.twitter.com/en/docs/twitter-api)
 * [milik Google](https://developers.google.com/apis-explorer)
 
-Sebagian API berbentuk lebih sederhana dan lebih mudah digunakan. Salah satu contoh API yang relatif lebih sederhana karena tidak memerlukan *authentication* atau *key* adalah API publik milik NBP (Narodowy Bank Polski, alias Bank Nasional Polandia). [*API documentation* mereka dapat dilihat di sini.](http://api.nbp.pl/en.html). 
+Beberapa orang juga mengompilasi daftar dokumentasi API publik, contohnya [di sini](https://github.com/public-apis/public-apis?tab=readme-ov-file).
 
-*Scroll* ke *query examples*.
+Sebagian API berbentuk lebih sederhana dan lebih mudah digunakan. Salah satu contoh API yang relatif lebih sederhana karena tidak memerlukan *authentication* atau *key* adalah API publik milik NBP (Narodowy Bank Polski, alias Bank Nasional Polandia). 
 
-Contoh *query* pertama yang diberikan adalah
+[*API documentation* dari NBP dapat dilihat di sini.](http://api.nbp.pl/en.html)
+
+Kita akan mencoba menggunakan API dari NBP untuk menunjukkan bagaimana menggunakan JavaScript untuk berinteraksi dengan API, lalu menampilkan hasilnya di webpage.
+
+*Scroll* ke *query examples*. Contoh *query* pertama yang diberikan adalah
 
 ```
 http://api.nbp.pl/api/exchangerates/rates/a/chf/
@@ -139,7 +145,9 @@ Silakan cek apakah informasi ini sesuai dengan nilai kurs yang sesungguhnya seda
 
 ![alt](https://github.com/divkomitb/divkomitb.github.io/blob/main/assets/kurs-rupiah.png?raw=true)
 
-Sekarang setelah kita mengetahui cara menggunakan `fetch()` di JavaScript untuk mendapatkan *response* suatu *public API* (dalam kasus ini, *public API* milik NBP yang memberikan *response* informasi kurs yang sedang berlaku), kita bisa membuat webpage HTML dan JavaScript yang menampilkan ini.
+Sekarang kita mengetahui cara menggunakan `fetch()` di JavaScript untuk mendapatkan *response* suatu *public API* (dalam kasus ini, *public API* milik NBP yang memberikan *response* informasi kurs yang sedang berlaku).
+
+Setelahnya, kita bisa membuat webpage HTML dan JavaScript yang menampilkan ini.
 
 ```html
 <!DOCTYPE html>
@@ -158,7 +166,7 @@ Sekarang setelah kita mengetahui cara menggunakan `fetch()` di JavaScript untuk 
                 const response = await fetch("http://api.nbp.pl/api/exchangerates/rates/a/idr/");
                 const logIDR = await response.json();
 
-                // hanya untuk debuggin saja
+                // hanya untuk debugging saja
                 // console.log(logIDR.rates[0].mid); 
 
                 idrEl.innerText = logIDR.rates[0].mid;
@@ -176,9 +184,11 @@ Hasilnya adalah sebagai berikut (dengan nilai kurs yang mungkin berbeda, jika ni
 ![alt](https://github.com/divkomitb/divkomitb.github.io/blob/main/assets/idr-html.png?raw=true)
 
 ## Merancang *Fetch API* menggunakan Google Apps Script
-Seseorang yang ingin merancang APIs sendiri umumnya memulai dengan memilih *framework* atau *library* seperti Django, Flask, PHP, atau Node.js. Kemudian, orang tersebut juga mesti setup database contohnya dengan menggunakan MySQL atau MongoDB. *Hosting* dan *deployment* dapat memanfaatkan platform *cloud* -- yang seringkali berbayar. 
+Seseorang yang ingin merancang APIs sendiri umumnya memulai dengan memilih *framework* atau *library* seperti Django, Flask, PHP, atau Node.js. Kemudian, orang tersebut juga mesti setup database contohnya dengan menggunakan MySQL atau MongoDB. *Hosting* dan *deployment* dapat memanfaatkan platform *cloud* — yang seringkali berbayar. 
 
-Modul ini ingin memperkenalkan metode *deployment* APIs yang lebih cepat dan mudah. Ada berbagai alasan APIs yang dibuat dengan metode ini tidak akan bisa menyaingi APIs yang dirancang mengikuti "*best practices*" yang sebelumnya disebutkan (seperti menggunakan *framework* yang memang sungguh dirancang untuk keperluan *back-end development*), contohnya isu skalabilitas, tetapi metode ini dapat dipertimbangkan untuk proyek kecil dan *prototyping*.
+Modul ini ingin memperkenalkan metode *deployment* APIs yang lebih cepat dan mudah. Metode ini meliputi merancang API menggunakan Google Apps Script yang akan digunakan untuk mendapatkan informasi dari *database* berupa suatu *spreadsheet* di Google Sheets.
+
+Ada berbagai alasan APIs yang dibuat dengan metode ini tidak akan bisa menyaingi APIs yang dirancang mengikuti "*best practices*" yang sebelumnya disebutkan (seperti menggunakan *framework* yang memang sungguh dirancang untuk keperluan *back-end development*), contohnya isu skalabilitas, tetapi metode ini dapat dipertimbangkan untuk proyek kecil dan *prototyping*. Manfaat lainnya adalah Google Sheets dapat diintegrasikan langsung dengan Google Forms.
 
 Selain itu, belajar melakukan *deployment* menggunakan metode ini harapannya dapat membantu proses pembelajaran *back-end development* yang lebih serius dan jangka panjang, apabila seseorang memilih melakukan tersebut. 
 
@@ -199,9 +209,11 @@ Berikut adalah tampilan yang ada pada tab baru tersebut.
 
 ![alt](https://github.com/divkomitb/divkomitb.github.io/blob/main/assets/apps-script2.png?raw=true)
 
-Untuk membuat sebuah *fetch API*, kita mesti menggunakan `doGet()`. Pada `Code.gs`, ganti kode *template* yang sudah ada dengan *sample* berikut. Jangan lupa untuk menyesuaikan `var sheetName = ...` berdasarkan nama *spreadsheet* yang digunakan. (Untuk contoh ini, nama *spreadsheet* tersebut adalah "*Form Responses 1*".
+Untuk membuat sebuah *fetch API*, kita mesti menggunakan `doGet()`. Pada `Code.gs`, ganti kode *template* yang sudah ada dengan *sample* berikut.
 
-```
+Jangan lupa untuk menyesuaikan `var sheetName = ...` berdasarkan nama *spreadsheet* yang digunakan. (Untuk contoh ini, nama *spreadsheet* tersebut adalah "*Form Responses 1*".
+
+```javascript
 function doGet() {
   var sheetName = "Form Responses 1";
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
@@ -214,6 +226,7 @@ function doGet() {
 
   var data = sheet.getDataRange().getValues();
   var headers = data[0];
+
   var jsonData = [];
 
   for (var i = 1; i < data.length; i++) {
@@ -236,7 +249,9 @@ function myFunction() {
 }
 ```
 
-Sekarang, kita siap menguji API ini. Untuk melakukan *deployment*, klik tombol biru *Deploy* lalu pilih *New deployment*.
+Sekarang, kita siap menguji API ini!
+
+Untuk melakukan *deployment*, klik tombol biru *Deploy* lalu pilih *New deployment*.
 
 ![alt](https://github.com/divkomitb/divkomitb.github.io/blob/main/assets/apps-script3.png?raw=true)
 
@@ -248,7 +263,9 @@ Pada pengaturan konfigurasi web app deployment yang muncul, pilih opsi "*Execute
 
 ![alt](https://github.com/divkomitb/divkomitb.github.io/blob/main/assets/apps-script5.png?raw=true)
 
-Setelah proses *updating* selesai, akan muncul tampilan sebagai berikut. *Copy* URL yang ada pada bagian "*Web app*". URL ini sama seperti URL yang sebelumnya kita gunakan untuk mendapatkan nilai kurs IDR pada *public API* Bank Polandia -- kita dapat mengecek hasilnya langsung di browser. *Paste* pada *URL bar* browser, *enter*. 
+Setelah proses *updating* selesai, akan muncul tampilan sebagai berikut. *Copy* URL yang ada pada bagian "*Web app*".
+
+URL ini sama seperti URL yang sebelumnya kita gunakan untuk mendapatkan nilai kurs IDR pada *public API* Bank Polandia — kita dapat mengecek hasilnya langsung di browser. *Paste* pada *URL bar* browser, lalu *enter*. 
 
 ![alt](https://github.com/divkomitb/divkomitb.github.io/blob/main/assets/apps-script6.png?raw=true)
 
@@ -260,15 +277,19 @@ Selanjutnya, seleksi *Advanced* lalu pilih *Go to [project name] (unsafe)*.
 
 ![alt](https://github.com/divkomitb/divkomitb.github.io/blob/main/assets/apps-script8.png?raw=true)
 
-Klik *Allow*.
+Klik *Allow*. Tindakan ini juga mungkin akan memberikan *security notification*.
 
 ![alt](https://github.com/divkomitb/divkomitb.github.io/blob/main/assets/apps-script9.png?raw=true)
 
-Akhirnya, didapatkan *response* dari *fetch API* yang telah kita rancang menggunakan Google Apps Script. Perhatikan bahwa isinya harusnya sama dengan isi yang ada pada *spreadsheet*.
+Akhirnya, didapatkan *response* dari *fetch API* yang telah kita rancang menggunakan Google Apps Script.
+
+Perhatikan bahwa isinya *harusnya* sama dengan isi yang ada pada *spreadsheet*.
 
 ![alt](https://github.com/divkomitb/divkomitb.github.io/blob/main/assets/apps-script10.png?raw=true)
 
 Kita telah berhasil membuat sebuah *fetch API*!
+
+API ini dapat dipanggil dengan cara yang sama seperti API publik dari NBP yang sebelumnya digunakan sebagai contoh.
 
 ## *Further reading*
 [How the Web Works: A Primer for Newcomers to Web Development (or anyone, really)](https://www.freecodecamp.org/news/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c/) di FreeCodeCamp membahas konsep-konsep *client, server, request*, dan *response* secara (sedikit) lebih mendalam.

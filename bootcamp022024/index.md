@@ -18,20 +18,23 @@ Oleh karena itu, semua materi diberikan secara asinkron via modul-modul teks yan
 
 [Modul 2](https://divkomitb.github.io/bootcamp022024/modul_2)
 
-Modul 3
+[Modul 3](https://divkomitb.github.io/bootcamp022024/modul_3)
 
-Modul 4
+[Modul 4](https://divkomitb.github.io/bootcamp022024/modul_4)
 
 ## Spesifikasi dan Submisi Tugas
 [Tugas 1](https://divkomitb.github.io/bootcamp022024/tugas_1)
 
 [Tugas 2](https://divkomitb.github.io/bootcamp022024/tugas_2)
 
-Tugas 3
+[Tugas 3](https://divkomitb.github.io/bootcamp022024/tugas_3)
 
-Tugas 4
+[Tugas 4](https://divkomitb.github.io/bootcamp022024/tugas_4)
 
 ## Changelog Keseluruhan
 05-02-2024
 * Modul 1: Menambahkan link ke post dan bagian Further reading, menambahkan gambar, perbaikan penulisan dan formatting minor
+
+03/08-2024
+* Fix links
 

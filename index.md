@@ -1,9 +1,9 @@
 <span class="homepage">Didirikan pada tahun 1980an awal, Divisi Komputer adalah salah satu divisi di bawah [Himpunan Mahasiswa Elektroteknik ITB](https://hme.itb.ac.id/) yang bersifat otonom — seperti [Divisi Elektron](https://medium.com/@elektronhme) dan [Divisi Workshop](https://workshophme.com/).</span>
 
 Divisi Komputer ...
-* <span class="homepage">memberikan <span class="highlighted">pelatihan</span> dan <span class="highlighted">wadah</span> belajar bersama bagi anggota,</span>
-* <span class="homepage"><span class="highlighted">memfasilitasi HME ITB</span> dalam keperluan *website* dan *software*,</span>
-* <span class="homepage">menyediakan jasa <span class="highlighted">pengerjaan proyek</span> tidak hanya bagi internal himpunan tetapi juga masyarakat umum!</span>
+* ➡ <span class="homepage">memberikan <span class="highlighted">pelatihan</span> dan <span class="highlighted">wadah</span> belajar bersama bagi anggota,</span>
+* ➡ <span class="homepage"><span class="highlighted">memfasilitasi HME ITB</span> dalam keperluan *website* dan *software*,</span>
+* ➡ <span class="homepage">menyediakan jasa <span class="highlighted">pengerjaan proyek</span> tidak hanya bagi internal himpunan tetapi juga masyarakat umum!</span>
 
 <img src="/assets/website-hme-2023.png" width="50%" class="img-regular" alt="Website HME ITB tahun 2023"/>
 
